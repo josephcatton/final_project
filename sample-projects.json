@@ -1,0 +1,31 @@
+{
+    "projects": {
+      "project": [
+        {
+          "title": "Support Education in Kenya",
+          "summary": "Help build schools and provide educational resources to children in rural Kenya.",
+          "projectLink": "https://www.globalgiving.org/projects/education-kenya/"
+        },
+        {
+          "title": "Clean Water for Rural India",
+          "summary": "Fund sustainable clean water systems for communities in India.",
+          "projectLink": "https://www.globalgiving.org/projects/clean-water-india/"
+        },
+        {
+          "title": "Protect the Amazon Rainforest",
+          "summary": "Support conservation efforts to protect biodiversity in the Amazon.",
+          "projectLink": "https://www.globalgiving.org/projects/amazon-protection/"
+        },
+        {
+          "title": "Disaster Relief for Syria",
+          "summary": "Provide food, shelter, and medical aid to displaced families.",
+          "projectLink": "https://www.globalgiving.org/projects/syria-relief/"
+        },
+        {
+          "title": "Empower Women in STEM",
+          "summary": "Support programs that train young women in science and tech careers.",
+          "projectLink": "https://www.globalgiving.org/projects/women-in-stem/"
+        }
+      ]
+    }
+  }
