@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HelpHub - Charity Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="charities.html"><i class="fas fa-list"></i> Charities List</a>
+            <a href="charity_profile.html"><i class="fas fa-user-friends"></i> Profiles</a>
+            <a href="projects.html"><i class="fas fa-globe"></i> Live Projects</a>
+            <a href="charity_profile.html#volunteer-form"><i class="fas fa-hands-helping"></i> Volunteer Now</a>
+          </nav>
+    </header>
+
+    <main>
+        <h1>Charity Profiles</h1>
+
+        <article id="feeding-america">
+            <h2>Feeding America</h2>
+            <img src="logos/feeding-america.png" alt="Feeding America Logo" width="200">
+            <p>The largest hunger-relief organization in the U.S., providing food through a network of food banks.</p>
+            <button class="toggle-info">More Info</button>
+            <p class="extra-info" style="display: none;">Feeding America partners with over 200 food banks across the U.S.</p>
+        </article>
+
+        <article id="habitat-for-humanity">
+            <h2>Habitat for Humanity</h2>
+            <img src="logos/habitat-for-humanity.png" alt="Habitat for Humanity Logo" width="200">
+            <p>Helps build affordable housing for low-income families.</p>
+            <button class="toggle-info">More Info</button>
+            <p class="extra-info" style="display: none;">Habitat builds homes using volunteer labor and donations.</p>
+        </article>
+
+        <article id="wwf">
+            <h2>World Wildlife Fund (WWF)</h2>
+            <img src="logos/wwf.png" alt="WWF Logo" width="200">
+            <p>Dedicated to global conservation efforts, protecting endangered species and promoting sustainability.</p>
+            <button class="toggle-info">More Info</button>
+            <p class="extra-info" style="display: none;">WWF works in over 100 countries on conservation efforts.</p>
+        </article>
+
+        <article id="american-red-cross">
+            <h2>American Red Cross</h2>
+            <img src="logos/american-red-cross.jpeg" alt="American Red Cross Logo" width="200">
+            <p>Provides disaster relief, emergency assistance, and blood donation services.</p>
+            <button class="toggle-info">More Info</button>
+            <p class="extra-info" style="display: none;">The Red Cross supports communities during crises globally.</p>
+        </article>
+
+        <aside>
+            <h3><i class="fas fa-info-circle"></i> Related Information</h3>
+            <p>Learn how you can donate or volunteer for these charities.</p>
+        </aside>
+
+        <!-- Hidden Volunteer Form -->
+        <section id="volunteer-form" style="display: none;">
+            <h2><i class="fas fa-hands-helping"></i> Volunteer Signup</h2>
+            <form action="#" method="post">
+                <label for="name"><i class="fas fa-user"></i> Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="availability"><i class="fas fa-calendar-alt"></i> Availability:</label>
+                <input type="text" id="availability" name="availability"><br>
+
+                <label for="interest"><i class="fas fa-heart"></i> Area of Interest:</label>
+                <input type="text" id="interest" name="interest"><br>
+
+                <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-envelope"></i> Contact Us: 
+        <a href="mailto:helphubsuggestion@helphub.com">helphubsuggestion@helphub.com</a></p>
+    </footer>
+
+    <script src="charity_profile.js"></script>
+</body>
+</html>
