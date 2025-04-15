@@ -1,0 +1,7 @@
+URL:
+https://josephcatton.github.io/final_project/
+
+Note:
+This site was originally intended to use the GlobalGiving API via HTTP GET requests. 
+Due to CORS restrictions on browser-based fetches, the final project uses mock JSON data 
+to simulate dynamic content loading while maintaining functionality and design intent.
