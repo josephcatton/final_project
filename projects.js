@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("project-container");
   
-    // Replace this once your key arrives!
-    const apiKey = "c137d58c-58e6-4af7-ba16-460d2dd245d4"; 
-    const url = `https://api.globalgiving.org/api/public/projectservice/themes/education/projects/active?api_key=${apiKey}`;
+    const proxy = "https://cors-anywhere.herokuapp.com/";
+    const url = `${proxy}https://api.globalgiving.org/api/public/projectservice/themes/education/projects/active?api_key=${apiKey}`;
   
     fetch(url)
       .then(response => {
