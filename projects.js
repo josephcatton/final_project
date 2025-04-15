@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("project-container");
 
   const apiKey = "c137d58c-58e6-4af7-ba16-460d2dd245d4";
-  const targetURL = `https://api.globalgiving.org/api/public/projectservice/themes/education/projects/active?api_key=${apiKey}`;
+  const targetURL = `https://api.globalgiving.org/api/public/projectservice/themes/education/projects/active.json?api_key=${apiKey}`;
   const encodedURL = encodeURIComponent(targetURL);
   const proxyURL = `https://api.allorigins.win/get?url=${encodedURL}`;
 
@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return response.json();
     })
     .then(data => {
-      // allorigins returns the real content as a string in `contents`
       const parsed = JSON.parse(data.contents);
 
       container.innerHTML = "";
