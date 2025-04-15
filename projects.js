@@ -1,19 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("project-container");
 
-  const proxy = "https://cors-anywhere.herokuapp.com/";
-  const apiKey = "c137d58c-58e6-4af7-ba16-460d2dd245d4"; // your actual key
-  const url = `${proxy}https://api.globalgiving.org/api/public/projectservice/themes/education/projects/active?api_key=${apiKey}`;
+  const apiKey = "c137d58c-58e6-4af7-ba16-460d2dd245d4";
+  const targetURL = `https://api.globalgiving.org/api/public/projectservice/themes/education/projects/active?api_key=${apiKey}`;
+  const encodedURL = encodeURIComponent(targetURL);
+  const proxyURL = `https://api.allorigins.win/get?url=${encodedURL}`;
 
-  fetch(url)
+  fetch(proxyURL)
     .then(response => {
       if (!response.ok) throw new Error("Network response was not ok");
       return response.json();
     })
     .then(data => {
-      container.innerHTML = ""; // Clear "loading..." text
+      // allorigins returns the real content as a string in `contents`
+      const parsed = JSON.parse(data.contents);
 
-      const projects = data.projects.project.slice(0, 5);
+      container.innerHTML = "";
+
+      const projects = parsed.projects.project.slice(0, 5);
       projects.forEach(project => {
         const div = document.createElement("div");
         div.className = "project-card";
